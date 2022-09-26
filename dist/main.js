@@ -1,1 +1,1 @@
-console.log("hello!");
+(()=>{"use strict";console.log("is it working"),function(){const t=document.getElementById("content"),e=document.createElement("h1");e.textContent="hello is thsi wroking",t.appendChild(e),console.log("fucku")}()})();

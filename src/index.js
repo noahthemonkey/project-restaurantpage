@@ -1,3 +1,6 @@
-import Icon from './pixelcafe.png'
+import {header} from './loader.js'
 
-console.log('hello!')
+console.log('is it working')
+
+
+header()
