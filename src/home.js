@@ -20,10 +20,10 @@ const cafeP = document.createElement('p')
 
 cafeH1.textContent = 'Welcome to PixCafe!'
 
-cafeImg.setAttribute('src', '/src/pixelcafe.png')
+cafeImg.setAttribute('src', '/src/imgs/pixelcafe.png')
 cafeImg.setAttribute('alt', "pixelart of pasteries and drinks")
 
-cafeP.textContent = 'I went to The Amazing Cafe and I had the best time of my life! I will never forget the time I spent there! 10/10 recommend it!'
+cafeP.textContent = 'I went to PixCafe and I had the best time of my life! I will never forget the time I spent there! 10/10 recommend it!'
 
 
 

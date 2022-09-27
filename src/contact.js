@@ -10,27 +10,43 @@ export function contact(){
     resetContent()
 
     const cafeH1 = document.createElement('h1')
-    
-    const cafeOwner1 = document.createElement('div')
-    const cafeOwner2 = document.createElement('div')
-    const cafeOwner3 = document.createElement('div')
-    
-    
-    
     cafeH1.textContent = 'Contact Information'
+    
+    const mrmonkey = document.createElement('div')
+    const elpenguino = document.createElement('div')
+    const mskitty = document.createElement('div')
+    
+    mrmonkey.setAttribute('class', 'mrmonkey')
+    elpenguino.setAttribute('class', 'elpenguino')
+    mskitty.setAttribute('class', 'mskitty')
+    
+  
     
 
     
-    cafeOwner1.textContent = 'yo yo'
-    cafeOwner2.textContent = 'sup sup'
-    cafeOwner3.textContent = 'bye bye'
+    mrmonkey.textContent = 'Mr Monkey'
+    elpenguino.textContent = 'El Penguino'
+    mskitty.textContent = 'Ms Kitty'
     
+
+    const mrmonkeyImg = document.createElement('img')
+    mrmonkeyImg.setAttribute('src', '/src/imgs/contactPeople/mrmonkey.png')
+    mrmonkey.appendChild(mrmonkeyImg)
+
+    const elpenguinoImg = document.createElement('img')
+    elpenguinoImg.setAttribute('src', '/src/imgs/contactPeople/elpenguino.png')
+    elpenguino.appendChild(elpenguinoImg)
+
+    const mskittyImg = document.createElement('img')
+    mskittyImg.setAttribute('src', '/src/imgs/contactPeople/mskitty.png')
+    mskitty.appendChild(mskittyImg)
+
     
     
     content.appendChild(cafeH1)
-    content.appendChild(cafeOwner1)
-    content.appendChild(cafeOwner2)
-    content.appendChild(cafeOwner3)
+    content.appendChild(mrmonkey)
+    content.appendChild(elpenguino)
+    content.appendChild(mskitty)
     
     
     

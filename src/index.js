@@ -1,3 +1,4 @@
+import './style.css';
 import {header, loadContent} from './header.js'
 import {home} from './home.js'
 import {menu} from './menu.js'
@@ -10,4 +11,4 @@ console.log('is it working')
 
 header()
 
-home()
+contact()
