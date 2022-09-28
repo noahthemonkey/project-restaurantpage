@@ -47,15 +47,59 @@ table {
 	border-spacing: 0;
 }
 /*----------------------------------------------------------------------------*/
+
+  
+
+
 body{
-	height: 100%;
-	width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+	display: grid;
+	justify-items: center;
+	
+	grid-template-columns: 1fr;
+	font-family: VT323;
+
+
+}
+
+#content {
+
+
+	width: 90%;
+}
+
+.homeContent {
+
+	display: grid;
+	grid-template-columns: 1fr 0.2fr;
+}
+.homeContent > h1 {
+	font-size: 24px;
+	color: pink;
+	text-shadow: 1px 1px black;
+}
+
+.reviewsContainer {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+}
+nav{
+	font-size: 20px;
+	display: grid;
+	grid-template-columns:  50px 50px 50px;
+	gap: 20px;
+	justify-content: center;
+	height: 50px;
+	padding: 15px;
+}
+
+.homeNav:hover, .menuNav:hover, .contactNav:hover {
+	font-size: 24px;
+	color: white;
 }
 
 .beverages, .sides, .mainDishes {
+	font-family: VT323;
     font-size: 24px;
 }
 
@@ -84,7 +128,7 @@ body{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: rgba(255, 192, 203, 0.633);
+	background-color: rgba(224, 173, 181, 0.633);
 	
 }
 
