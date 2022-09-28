@@ -1,4 +1,5 @@
 import './style.css';
+import { background } from './background.js';
 import {header, loadContent} from './header.js'
 import {home} from './home.js'
 import {menu} from './menu.js'
@@ -11,4 +12,5 @@ console.log('is it working')
 
 header()
 
-contact()
+home()
+background()
