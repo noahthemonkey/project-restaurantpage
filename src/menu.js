@@ -12,10 +12,20 @@ export function menu(){
     resetContent()
     
 
-
+    const beverages = document.createElement('div')
+    const beveragesH1 = document.createElement('h1')
+    beverages.appendChild(beveragesH1)
+    beveragesH1.textContent = 'Beverages'
     const mainDishes = document.createElement('div')
+    const mainDishesH1 = document.createElement('h1')
+    mainDishes.appendChild(mainDishesH1)
+    mainDishesH1.textContent = 'Main Dishes'
     const sides = document.createElement('div')
-
+    const sidesH1 = document.createElement('h1')
+    sidesH1.textContent = 'Sides'
+    sides.appendChild(sidesH1)
+  
+    
     
 
     
@@ -30,7 +40,7 @@ export function menu(){
     
     
 
-        const beverages = document.createElement('div')
+        
                 const strawberryBoba = document.createElement('div')
                 strawberryBoba.textContent = 'This is yummy Strawberry Boba!'
                     const strawberryBobaImg = document.createElement('img')
@@ -81,8 +91,7 @@ export function menu(){
                     fizzyDrink.appendChild(fizzyDrinkImg)
                 
         
-        beverages.textContent = 'Beverages'
-        beverages.append(strawberryBoba, machaTea, tea, cappuccino, caffeLatte, americano, orangeJuice, fizzyDrink)
+        beverages.append(beveragesH1, strawberryBoba, machaTea, tea, cappuccino, caffeLatte, americano, orangeJuice, fizzyDrink)
         beverages.setAttribute('class', 'beverages')
 
         content.appendChild(beverages)
@@ -122,8 +131,8 @@ export function menu(){
     
 
 
-    mainDishes.textContent = 'Main Dishes'
-    mainDishes.append(berryPancake, butterPancake, icecreamPancake, eggSandwich, bentoBox)
+
+    mainDishes.append(mainDishesH1, berryPancake, butterPancake, icecreamPancake, eggSandwich, bentoBox)
     mainDishes.setAttribute('class', 'mainDishes')
 
 
@@ -157,8 +166,8 @@ export function menu(){
 
 
 
-    sides.textContent = 'Sides'
-    sides.append(chocoStrawberry, creamDonut, mochiIcecream, croissant)
+   
+    sides.append(sidesH1, chocoStrawberry, creamDonut, mochiIcecream, croissant)
     sides.setAttribute('class', 'sides')
     content.appendChild(sides)
     

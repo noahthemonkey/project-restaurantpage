@@ -12,5 +12,5 @@ console.log('is it working')
 
 header()
 
-home()
+menu()
 background()

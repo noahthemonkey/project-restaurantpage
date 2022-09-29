@@ -62,20 +62,31 @@ body{
 }
 
 #content {
-
-
-	width: 90%;
+	background-color: rgba(255, 255, 255, 0.596);
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	justify-items: center;
+	gap: 20px;
+	padding: 10px;
+	border-radius: 15px;
 }
 
 .homeContent {
-
+	height: 250px;
+	font-size: 18px;
+	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr 0.2fr;
+	justify-items: center;
+	grid-template-columns: 0.8fr 0.4fr;
+	gap: 20px;
+	
 }
-.homeContent > h1 {
-	font-size: 24px;
+#content > h1 {
+	font-size: 30px;
 	color: pink;
 	text-shadow: 1px 1px black;
+	
 }
 
 .reviewsContainer {
@@ -83,8 +94,24 @@ body{
 	grid-template-columns: 1fr;
 	gap: 20px;
 }
+
+.openHours{
+	width: 250px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.2fr 0.1fr 0.1fr;
+	text-align: center;
+}
+
+.openHours > h1{
+	font-size: 22px;
+}
+
+.customerReviews > p {
+	width: 30vh;
+}
 nav{
-	font-size: 20px;
+	font-size: 32px;
 	display: grid;
 	grid-template-columns:  50px 50px 50px;
 	gap: 20px;
@@ -94,22 +121,42 @@ nav{
 }
 
 .homeNav:hover, .menuNav:hover, .contactNav:hover {
-	font-size: 24px;
-	color: white;
+	font-size: 28px;
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 1px black;
 }
 
 .beverages, .sides, .mainDishes {
 	font-family: VT323;
     font-size: 24px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 10px;
+	margin: 5px;
+	width: 25vw;
+	
+	
 }
+.beverages > h1, .sides > h1, .mainDishes > h1 {
+	font-size: 22px;
+	grid-column: 1 / span 2;
 
+}
 .beverages > div, .sides > div, .mainDishes > div {
-    font-size: 12px;
+	display: grid;
+	grid-template-columns: 1fr;
+	
+    font-size: 15px;
 }
 
 .beverages > div > img, .mainDishes > div > img, .sides > div > img {
-    width: 30px;
-    border-radius: 100%;
+    width: 5vh;
+    border: 1px black solid;
+	border-radius: 2px;
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	object-fit: contain;
 }
 
 .mrmonkey > img, .elpenguino > img, .mskitty > img {
@@ -124,7 +171,7 @@ nav{
 	position: absolute;
 	overflow: hidden;
 	width: 100%;
-	height: 100%;
+	height: 90vw;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -137,7 +184,7 @@ nav{
 	opacity: 10%;
 	height: 5000px;
 	width: 9000px;
-	animation: slide 7s linear infinite;
+	animation: slide 10s linear infinite;
 	animation-fill-mode: forwards;
 }
 
