@@ -39,7 +39,7 @@ const cafeP = document.createElement('p')
 
 openH1.textContent = 'Hours'
 openP1.textContent = "Monday to Friday 6am - 6pm"
-openP2.textContent = "Saturday to Sunday 8am - 6pm"
+openP2.textContent = "Saturday to Sunday 6am - 4pm"
 
 
 cafeH1.textContent = 'Welcome to PixCafe!'
