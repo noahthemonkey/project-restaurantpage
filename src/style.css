@@ -58,11 +58,16 @@ body{
 	grid-template-columns: 1fr;
 	font-family: VT323;
 
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(224, 173, 181, 0.574);
 
 }
 
 #content {
-	background-color: rgba(255, 255, 255, 0.596);
+	background-color: rgba(255, 255, 255, 0.664);
 	display: grid;
 	grid-template-columns: 1fr;
 	justify-content: center;
@@ -70,7 +75,7 @@ body{
 	gap: 20px;
 	padding: 10px;
 	border-radius: 15px;
-	height: 100%;
+	
 }
 
 
@@ -112,7 +117,7 @@ body{
 	font-size: 14px;
 	font-style: italic;
 	text-shadow: 0.5px 0.5px black;
-	animation: timer 1s infinite ;
+	animation: timer 1s linear infinite ;
 }
 
 @keyframes timer{
@@ -149,15 +154,23 @@ nav{
 	color: rgb(255, 255, 255);
 	text-shadow: 1px 1px black;
 }
-
+.menuContainer {
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	
+}
 .beverages, .sides, .mainDishes {
 	font-family: VT323;
     font-size: 24px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.2fr;
 	padding: 10px;
 	margin: 5px;
-	width: 350px;
+	
+	
 	
 	
 }
@@ -174,7 +187,7 @@ nav{
 }
 
 .beverages > div > img, .mainDishes > div > img, .sides > div > img {
-    width: 5vh;
+    width: 30px;
     border: 1px black solid;
 	border-radius: 2px;
 	display: flex;
@@ -205,40 +218,41 @@ nav{
 	object-fit: contain;
 }
 
+.mrmonkey > h1, .elpenguino > h1, .mskitty > h1 {
+	font-size: 22px;
+	text-shadow: black 1px 1px; 
+	color: pink;
+}
+
 .imgContainer {
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	z-index: -1000;
 	position: absolute;
-	overflow: hidden;
-	width: 100%;
+	max-height: fit-content;
+	background-repeat: repeat;
+	background-size: 30%;
+	background-position: 0 0;
+	
+
+	opacity: 10%;
 	height: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: rgba(224, 173, 181, 0.633);
+	animation: slide 6s linear infinite ;
+	
 	
 }
 
 .pixelCafe {
 
-	opacity: 10%;
-	height: 5000px;
-	width: 9000px;
-	animation: slide 10s linear infinite;
-	animation-fill-mode: forwards;
+	
 }
 
 @keyframes slide {
-
-	0%{
-		transform: translate(0%, 0%);
-		
-	}
-	100%{
-		transform: translate(-600px, -335px);
-
-	}
+	99.9%{background-position:  100%, 100%;}
+	0%, 100%{background-position: 600px 335px; opacity: 1%;}
+	50%{opacity: 12%;}
 
 	
 }

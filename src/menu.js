@@ -1,5 +1,8 @@
 export function menu(){
     const content = document.getElementById('content')
+    const menuContainer = document.createElement('div')
+    menuContainer.setAttribute('class', 'menuContainer')
+    
     
     const menuH1 = document.createElement('h1')
 
@@ -10,8 +13,11 @@ export function menu(){
           
     }
     resetContent()
-    
 
+    menuH1.textContent = 'Menu'
+    content.appendChild(menuH1)
+    
+    content.appendChild(menuContainer)
     const beverages = document.createElement('div')
     const beveragesH1 = document.createElement('h1')
     beverages.appendChild(beveragesH1)
@@ -30,8 +36,7 @@ export function menu(){
 
     
     
-    menuH1.textContent = 'Menu'
-    content.appendChild(menuH1)
+  
     
     
     
@@ -94,11 +99,11 @@ export function menu(){
         beverages.append(beveragesH1, strawberryBoba, machaTea, tea, cappuccino, caffeLatte, americano, orangeJuice, fizzyDrink)
         beverages.setAttribute('class', 'beverages')
 
-        content.appendChild(beverages)
+        menuContainer.appendChild(beverages)
     
     
         // Berry pancake, Butter Syrup Pancakes, Ice Cream Pancake, Egg & Sandwiches, Bento Box
-    content.appendChild(mainDishes)
+    menuContainer.appendChild(mainDishes)
         const berryPancake = document.createElement('div')
         berryPancake.textContent = 'Berry Pancakes!'
             const berryPancakeImg = document.createElement('img')
@@ -169,7 +174,7 @@ export function menu(){
    
     sides.append(sidesH1, chocoStrawberry, creamDonut, mochiIcecream, croissant)
     sides.setAttribute('class', 'sides')
-    content.appendChild(sides)
+    menuContainer.appendChild(sides)
     
     
     

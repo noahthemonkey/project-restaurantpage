@@ -12,4 +12,4 @@ console.log('is it working')
 
 header()
 background()
-home()
+menu()
